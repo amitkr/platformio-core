@@ -151,7 +151,7 @@ def init_base_project(project_dir):
 
     init_lib_readme(lib_dir)
     init_ci_conf(project_dir)
-    init_cvs_ignore(project_dir)
+    init_vcs_ignore(project_dir)
 
 
 def init_lib_readme(lib_dir):
@@ -259,9 +259,9 @@ def init_ci_conf(project_dir):
 """)
 
 
-def init_cvs_ignore(project_dir):
+def init_vcs_ignore(project_dir):
     ignore_path = join(project_dir, ".gitignore")
-    default = [".pioenvs\n", ".piolibdeps\n"]
+    default = ["build\n", ".piolibdeps\n"]
     current = []
     modified = False
     if isfile(ignore_path):

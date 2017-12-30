@@ -7,6 +7,8 @@ PlatformIO 3.0
 3.5.1 (2018-??-??)
 ~~~~~~~~~~~~~~~~~~
 
+* Renamed ``envs_dir`` option to (`build_dir <http://docs.platformio.org/page/projectconf/section_platformio.html#include-dir>`__).
+  Default value is now set to "build" instead of old ".pioenvs".
 * Fixed project generator for CLion IDE
 
 3.5.0 (2017-12-28)

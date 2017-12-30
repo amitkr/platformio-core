@@ -1,3 +1,3 @@
-.pioenvs
+build
 .piolibdeps
 .clang_complete
